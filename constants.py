@@ -1,0 +1,27 @@
+# for board
+COLUMNS = "ABCDEFGH"
+ROWS = "12345678"
+
+# color rgbs
+LIGHT = (255, 255, 255)
+DARK = (0, 0, 0)
+BACKGROUND = (118, 150, 86)
+BLUE = (59, 89, 152)
+GREY = (128, 128, 128)
+
+# frame constants for the board
+PAD = 40
+TILE_WIDTH = 50
+TILE_HEIGHT = 50
+SPACE = 3
+BOARD_WIDTH = 8 * TILE_WIDTH + 7 * SPACE
+BOARD_HEIGHT = 8 * TILE_HEIGHT + 7 * SPACE
+
+# fps
+FPS = max(TILE_WIDTH, TILE_HEIGHT) + SPACE
+SPEED = 10
+
+# button size
+BUTTON_WIDTH = 140
+BUTTON_HEIGHT = 50
+
