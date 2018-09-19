@@ -17,3 +17,6 @@ A simple GUI to demonstrate the Knight's Tour problem. The knight will tour the 
 ## Optimizations
 * Have a background file that keeps previous knight's tour paths so that a new path isn't generated if a path from a given square is already known
 * Reduce the number of constant values
+
+## Other
+* Add documentation
