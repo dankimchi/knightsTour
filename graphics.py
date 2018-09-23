@@ -1,5 +1,11 @@
-import pygame, sys, constants, exceptions, random, knightsTour
+import constants
+import exceptions
+import knightsTour
+import pygame
+import random
+import sys
 from pygame.locals import *
+
 
 class Graphics:
     def __init__(self):
@@ -90,6 +96,9 @@ class Graphics:
         x_step = (new_x - self.knight_x) // constants.FPS
         y_step = (new_y - self.knight_y) // constants.FPS
 
+        knight_sound = pygame.mixer.Sound("knightSound.wav")
+        pygame.mixer.Sound.play(knight_sound)
+        pygame.mixer.music.stop()
         while self.knight_x != new_x or self.knight_y != new_y:
             self.clock.tick(constants.FPS * constants.SPEED)
 
